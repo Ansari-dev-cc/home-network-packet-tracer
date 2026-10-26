@@ -113,17 +113,4 @@ write memory
 
 Building a network from scratch is helpful, but intentionally breaking each layer taught me how to read network symptoms instead of guessing. When a PC gets a `169.254.x.x` address, I now immediately know it is a DHCP communication failure rather than a broken NIC. I also learned why a computer with a bad default gateway can still talk to local devices on the same switch, and how to isolate DNS failures by comparing `ping` by IP address against `ping` by hostname.
 
----
-
-## 7. How to Upload This to GitHub
-
-Run these commands inside your project folder (where your `.pkt` file and `screenshot_home_network/` folder are saved):
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Home network Packet Tracer lab, screenshots, and documentation"
-git branch -M main
-git remote add origin https://github.com/<your-username>/home-network-packet-tracer.git
-git push -u origin main
 ```
